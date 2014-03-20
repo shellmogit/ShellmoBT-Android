@@ -1,25 +1,8 @@
 package org.shellmo.shellmobt;
 /*
  * Copyright (C) 2014 Shellmo Project
- * 
- */
-
-
-
-/*
- * Copyright (C) 2009 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * Licensed under the MIT license (MIT)
+ * http://shellmo.org
  */
 
 import android.app.Activity;
@@ -244,6 +227,7 @@ String address = "";//RN42
     @Override
     public void onStop() {
         super.onStop();
+        if (mChatService != null) mChatService.stop();
         Log.i(TAG, "-- ON STOP --");
     }
 
@@ -529,33 +513,7 @@ String address = "";//RN42
 				sendbt("w");
 				im_up.setImageResource(R.drawable.bt_up_on);
 				}
-			/*
-			else if(v==im_sp){
-				im_sp.setImageResource(R.drawable.bt_stop_on);
-				if(speedbt==false){
-				sendbt("v");
-				sleep(75);
-				sendbt("9");
-				sleep(75);
-				sendbt("9");
-				sleep(75);
-				speedbt=true;
-				sb1.setProgress(99);
-				((TextView)findViewById(R.id.textView1)).setText("99");
-				}
-				else if(speedbt==true){
-					sendbt("v");
-					sleep(75);
-					sendbt("5");
-					sleep(75);
-					sendbt("0");
-					sleep(75);
-					speedbt=false;
-					sb1.setProgress(50);
-					((TextView)findViewById(R.id.textView1)).setText("50");
-					}			
-				}
-				*/
+
 			//Bluetooth button
 			else if(v==im_blue){
 				im_blue.setImageResource(R.drawable.bt_bluetooth_on);
@@ -600,9 +558,9 @@ String address = "";//RN42
 			if(v==im_blue){
 				im_blue.setImageResource(R.drawable.bt_bluetooth_off);
 			}
-			else if(v==im_a){im_a.setImageResource(R.drawable.bt_cus_off);sendbt("i");sleep(50);sendbt("i");}
-			else if(v==im_b){im_b.setImageResource(R.drawable.bt_cus_off);sendbt("k");sleep(50);sendbt("k");}
-			else if(v==im_c){im_c.setImageResource(R.drawable.bt_cus_off);sendbt("m");sleep(50);sendbt("m");}
+			else if(v==im_a){im_a.setImageResource(R.drawable.bt_cus_off);sendbt("i");/*sleep(75);sendbt("i");*/}
+			else if(v==im_b){im_b.setImageResource(R.drawable.bt_cus_off);sendbt("k");/*sleep(75);sendbt("k");*/}
+			else if(v==im_c){im_c.setImageResource(R.drawable.bt_cus_off);sendbt("m");/*sleep(75);sendbt("m");*/}
 
 			
 		}
