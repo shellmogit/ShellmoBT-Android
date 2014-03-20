@@ -1,5 +1,6 @@
 ShellmoBT-Android
 =================
+Introduction:
 
 Controlling software of Shellmo from Android.
 
@@ -9,6 +10,8 @@ You can install from https://github.com/shellmogit/ShellmoBT-Android/raw/master/
 
 This software will work on the Android 2.3.3 or later version
 
+-------------------------------------
+Version:
 
 This is the test release version. 
 
@@ -16,7 +19,8 @@ Version: 1.00
 
 Upload: 2014.03.20
 
-
+-------------------------------------
+Development:
 
 Made with Eclipse Platform
 
@@ -28,6 +32,7 @@ Target SDK version = 17 (Android 4.2.2)
 
 
 -------------------------------------
+License:
 
  Copyright (C) 2014 Shellmo Project
  
