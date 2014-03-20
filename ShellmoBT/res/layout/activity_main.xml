@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:android1="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:background = "#000000"
+            >
+
+
+
+            <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center" >
+    
+                <TextView
+                    android:id="@+id/comlog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android1:layout_alignParentLeft="true"
+                    android1:layout_alignParentTop="true"
+                    android:text="comlog"
+                    android1:textColor="#ff555555"
+                    android1:textSize="15sp" />
+                
+               <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+                
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="260dp"
+    android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/bt_left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/bt_stop"
+            android:src="@drawable/bt_left_off"
+            android1:paddingBottom="15dp"
+            android1:paddingLeft="15dp"
+            android1:paddingRight="15dp"
+            android1:paddingTop="15dp"
+            
+             />
+
+        <ImageView
+            android:id="@+id/bt_right"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/bt_stop"
+            android:src="@drawable/bt_right_off" 
+            android1:paddingBottom="15dp"
+            android1:paddingLeft="15dp"
+            android1:paddingRight="15dp"
+            android1:paddingTop="15dp"
+            
+            />
+
+        <ImageView
+            android:id="@+id/bt_up"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/bt_stop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/bt_up_off"
+            android1:paddingBottom="15dp"
+            android1:paddingLeft="15dp"
+            android1:paddingRight="15dp"
+            android1:paddingTop="15dp"
+            
+            
+            />
+
+        <ImageView
+            android:id="@+id/bt_down"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/bt_stop"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+            android:src="@drawable/bt_down_off" 
+            android:contentDescription="@string/btdown"
+            android1:paddingBottom="15dp"
+            android1:paddingLeft="15dp"
+            android1:paddingRight="15dp"
+            android1:paddingTop="15dp"
+            
+            />
+
+        <ImageView
+            android1:id="@+id/bt_blue"
+            android1:layout_width="75dp"
+            android1:layout_height="75dp"
+            android1:layout_alignParentBottom="true"
+            android1:layout_alignParentLeft="true"
+            android1:paddingBottom="5dp"
+            android1:paddingLeft="15dp"
+            android1:paddingRight="15dp"
+            android1:paddingTop="15dp"
+            android1:src="@drawable/bt_bluetooth_off" />
+
+        <ImageView
+            android1:id="@+id/bt_stop"
+            android1:layout_width="55dp"
+            android1:layout_height="55dp"
+            android1:layout_centerHorizontal="true"
+            android1:layout_centerVertical="true"
+            android1:src="@drawable/bt_stop_off"
+            android1:visibility="invisible" />
+        
+            <TextView
+                android:id="@+id/blue_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android1:layout_alignParentRight="true"
+                android1:layout_alignParentTop="true"
+                android:text="blue_status"
+                android1:textColorHint="@android:color/white"
+                android1:textSize="15sp" />
+
+    </RelativeLayout>
+
+<LinearLayout
+    android1:layout_width="match_parent"
+    android1:layout_height="wrap_content"
+    android1:gravity="center" >
+
+    <RelativeLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="match_parent" >
+        
+            </RelativeLayout>
+    <RelativeLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="match_parent" >
+        
+                <ImageView
+            android:id="@+id/bt_cus_A"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+             android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+             
+            android:src="@drawable/bt_cus_off" 
+            android:contentDescription="@string/btdown"
+            android1:paddingBottom="2dp"
+            android1:paddingLeft="5dp"
+            android1:paddingRight="10dp"
+            android1:paddingTop="2dp" 
+            
+            />
+                
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="A"
+        android1:textColorHint="@android:color/white"
+        android1:textSize="20dp" />
+        
+    </RelativeLayout>
+        <RelativeLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="match_parent" >
+        
+                <ImageView
+            android:id="@+id/bt_cus_B"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+             android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+             
+            android:src="@drawable/bt_cus_off" 
+            android:contentDescription="@string/btdown"
+            android1:paddingBottom="2dp"
+            android1:paddingLeft="10dp"
+            android1:paddingRight="10dp"
+            android1:paddingTop="2dp" 
+            
+            />
+                
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="B"
+        android1:textColorHint="@android:color/white"
+        android1:textSize="20dp" />
+        
+    </RelativeLayout>
+        <RelativeLayout
+        android1:layout_width="wrap_content"
+        android1:layout_height="match_parent" >
+        
+                <ImageView
+            android:id="@+id/bt_cus_C"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+             android:layout_centerHorizontal="true"
+                     android:layout_centerVertical="true"
+             
+            android:src="@drawable/bt_cus_off" 
+            android:contentDescription="@string/btdown"
+            android1:paddingBottom="2dp"
+            android1:paddingLeft="10dp"
+            android1:paddingRight="5dp"
+            android1:paddingTop="2dp" 
+            
+            />
+                
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="C"
+        android1:textColorHint="@android:color/white"
+        android1:textSize="20dp" />
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>
+
+<ScrollView
+    android1:id="@+id/scrollView1"
+    android1:layout_width="match_parent"
+    android1:layout_height="match_parent" 
+    android:background = "#000000">
+
+
+
+
+               <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+                >
+    <TextView
+        android:id="@+id/tx_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="speed" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:progress="49" android:max="99" android:paddingLeft="10dp" android:paddingRight="10dp"/>
+    
+        <TextView
+        android:id="@+id/tx_accel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accel" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:progress="49" android:max="99" android:paddingLeft="10dp" android:paddingRight="10dp"/>
+    
+    
+    
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+                </RelativeLayout>
+                
+
+</LinearLayout>
