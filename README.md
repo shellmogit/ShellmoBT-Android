@@ -1,8 +1,8 @@
 ShellmoBT-Android
 =================
 
-Controlling software of Shellmo from Android 
-This software is based on the "Bluetooth Chat" which is a sample application by Android Open Source Project
+Controlling software of Shellmo from Android.
+This software is based on the "Bluetooth Chat" which is a sample application by Android Open Source Project.
 
 This is the test release version. 
 Version: 1.00 
