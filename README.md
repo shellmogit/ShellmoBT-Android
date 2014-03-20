@@ -26,9 +26,9 @@ Made with Eclipse Platform
 
 Eclips version: 3.7.2
 
-Minimum SDK version = 10 (Android 2.3.3)
+Minimum SDK version: 10 (Android 2.3.3)
 
-Target SDK version = 17 (Android 4.2.2)
+Target SDK version: 17 (Android 4.2.2)
 
 
 -------------------------------------
@@ -36,6 +36,6 @@ License:
 
  Copyright (C) 2014 Shellmo Project
  
- Licensed under the MIT license (MIT)
+ Licensed under the MIT license (MIT) by Shellmo Project
  
- http://shellmo.org
+ Web: http://shellmo.org
